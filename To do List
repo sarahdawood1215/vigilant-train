@@ -1,0 +1,38 @@
+/** Thrift Store Items
+Sandles 
+Shirts
+Jeans
+Shorts
+Active Wear
+Lounge Wear
+Socks
+Perfeum
+Cologne
+Sneakers
+Kitchen pots
+Candles
+Cups
+Plants
+Plates
+**/
+CREATE TABLE thrift_store_items (Id integer primary key, item TEXT, sell_price INTEGER, cost_price INTEGER, category TEXT, number_in_stock INTEGER); 
+
+INSERT INTO thrift_store_items VALUES (1,"sandles",14,12, "appearl", 20);
+INSERT INTO thrift_store_items VALUES (2,"shirts",20,15, "clothes", 30);
+INSERT INTO thrift_store_items VALUES (3,"jeans",15,12, "clothes", 40);
+INSERT INTO thrift_store_items VALUES (4,"shorts",12,10,"clothes",50);
+INSERT INTO thrift_store_items VALUES (5,"active_wear",20,15,"clothes",60);
+INSERT INTO thrift_store_items VALUES (6,"Lounge_wear",18,15,"clothes",70);
+INSERT INTO thrift_store_items VALUES (8,"perfuem", 20,15,"appearl",90);
+INSERT INTO thrift_store_items VALUES (9,"cologne",30,20,"appearl",20);
+INSERT INTO thrift_store_items VALUES (10,"sneakers", 30,20,"appearl",30);
+INSERT INTO thrift_store_items VALUES (11,"kitchen_pots", 17,12,"home", 40);
+INSERT INTO thrift_store_items VALUES (12,"candles",12,10,"home", 40);
+INSERT INTO thrift_store_items VALUES (13,"cups",12,10,"home",60);
+INSERT INTO thrift_store_items VALUES (14,"plants", 14,12,"home",70);
+INSERT INTO thrift_store_items VALUES (15,"plates",16,12,"home",80);
+
+SELECT * FROM thrift_store_items ORDER BY sell_price;
+
+Select MAX(cost_price) FROM thrift_store_items
+
